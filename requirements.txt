@@ -1,0 +1,11 @@
+bleach==3.1.0
+certifi==2019.3.9
+chardet==3.0.4
+fints==2.1.1
+idna==2.8
+mt-940==4.15.0
+requests==2.21.0
+sepaxml==2.0.0
+six==1.12.0
+urllib3==1.24.1
+webencodings==0.5.1
