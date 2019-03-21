@@ -5,6 +5,7 @@ import json
 from fints.client import FinTS3PinTanClient
 
 config = json.load(open("config", "r"))
+logging.basicConfig(level=logging.CRITICAL)
 
 def get_graphite(config):
 	connection = config["graphite"]
@@ -63,7 +64,6 @@ def main(config):
 	c = get_client(config)
 	g = get_graphite(config)
 	h = get_holdings(c)
-	print_holdings(h)
 	send_holdings(g, h)
 
 if __name__ == "__main__":
